@@ -1,0 +1,337 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  
+  html,body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #main {
+    height: 100%;
+    width: 100%;
+    background-color: #e9dfdf;
+  }
+  
+  #navbar {
+    height: 15vh;
+    width: 100%;
+    background-color: #34495e;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 0 3%; 
+    position: relative;
+  }
+
+  #algos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 60%;
+    gap: 2vw ;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+
+  .generate{
+    padding: 0.5vw 1vw;
+    border: none;
+    border-radius: 30px;
+  }
+
+  #gen{
+    margin-top: 2.4%;
+
+  }
+  .sortingAlgo {
+    margin-top: 2.4%;
+    font-size: 16px;
+  }
+  .sort_button {
+    margin-top: 2.4%;
+    margin-left: -2%;
+    font-size: 16px;
+  }
+
+  #algo1{
+    border: none;
+    border-radius: 30px;
+    padding: 0.5vw 1vw;
+  }
+
+  #algo2{
+    border: none;
+    border-radius: 30px;
+    padding: 0.5vw 1vw;
+  }
+
+  #algo3{
+    border: none;
+    border-radius: 30px;
+    padding: 0.5vw 1vw;
+  }
+  #algo4{
+    border: none;
+    border-radius: 30px;
+    padding: 0.5vw 1vw;
+  }
+
+  #algo5{
+    border: none;
+    border-radius: 30px;
+    padding: 0.5vw 1vw;
+  }
+
+  #algo6{
+    border: none;
+    border-radius: 30px;
+    padding: 0.5vw 1vw;
+  }
+
+  #sortbtn{
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5vw 1vw;
+  }
+
+
+  #array_generate:hover {
+    opacity: 70%;
+    cursor: pointer;
+  }
+  
+  #array_size:hover {
+    cursor: default;
+  }
+  
+  #array_speed:hover {
+    cursor: default;
+  }
+  
+  .sortingAlgo:hover {
+    opacity: 70%;
+    cursor: pointer;
+  }
+
+  #array_size {
+    height: 17%;
+    width: 12%;
+    margin-top: 2.1%;
+    margin-right: 0.5%;
+    font-size: 16px;
+    margin-left: 20px;
+    position: relative;
+    right: -5vmin;
+  }
+  
+  #a_size {
+    height: 7%;
+    width: 8.5%;
+    margin-top: 3.9%;
+    margin-left: -12%;
+    margin-right: 0.3%;
+    background: #fff;
+    outline: none;
+    border-radius: 4px;
+    position: relative;
+    left: 3.5vmin;
+  }
+  
+  #a_size::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13.8px;
+    height: 13.8px;
+    border-radius: 50%;
+    background: magenta;
+    cursor: pointer;
+  }
+  
+  #array_speed {
+    height: 17%;
+    width: 12%;
+    margin-top: 2.1%;
+    margin-left: 2%;
+    font-size: 16px;
+    position: relative;
+    right: -5vmin;
+  }
+  
+  #a_speed {
+    height: 7%;
+    width: 8.5%;
+    margin-top: 3.9%;
+    margin-left: -10.4%;
+    margin-right:4%;
+    background: white;
+    outline: none;
+    border-radius: 4px;
+    position: relative;
+    left: 2vmin;
+  }
+  
+  #a_speed::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13.8px;
+    height: 13.8px;
+    border-radius: 50%;
+    background: magenta;
+    cursor: pointer;
+  }
+  
+  
+  .sort_button:hover {
+    opacity: 70%;
+    cursor: pointer;
+  }
+  
+  #array_container {
+    display: flex;
+    width: 70%;
+    height: 75%;
+    margin-top : 2.2%;
+    margin-left: 15%;
+    align-items: flex-end;
+  }
+  
+  
+  .hide {
+    display: none !important;  
+  }
+  
+  .butt_selected{
+     color: rgb(0, 119, 255);
+     cursor: pointer;
+  }
+  
+  .butt_locked{
+    cursor: default;
+    pointer-events: none;
+  }
+  
+  .butt_locked:hover{
+    opacity: 100%;
+    cursor: default;
+  }
+  
+  .inp_genDisable{
+    pointer-events: none;
+  }
+
+  @media (max-width:550px){ 
+    #navbar{
+     height: 15vh;
+    }
+
+    .generate{
+      font-size: 3vw;
+      width: 20vw;
+    }
+
+    #array_size{
+      font-size: 13px;
+      position: relative;
+      left: -1vw;
+    }
+    #array_speed{
+      font-size: 13px;
+      position: relative;
+      left: 12vw;
+    }
+
+    #a_size{
+      position: relative;
+      left: 10vw;
+      width: 20%;
+      top: 3.5vw;
+    }
+
+    #a_speed{
+      position: relative;
+      left: 27vw;
+      top: 3.5vw;
+      width: 20%;
+    }
+
+    #algos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 60%;
+      gap: 2vw ;
+      margin-left: 19vw;
+      margin-top: 5vw;
+      margin-bottom: 1vw;
+    }
+
+    #algo1{
+      border: none;
+      font-size: 3vw;
+      border-radius: 10px;
+      padding: 0.5vw 1vw;
+    }
+  
+    #algo2{
+      border: none;
+      font-size: 3vw;
+      border-radius: 10px;
+      padding: 0.5vw 1vw;
+    }
+  
+    #algo3{
+      border: none;
+      font-size: 3vw;
+      border-radius: 10px;
+      padding: 0.5vw 1vw;
+    }
+    #algo4{
+      border: none;
+      font-size: 3vw;
+      border-radius: 10px;
+      padding: 0.5vw 1vw;
+    }
+  
+    #algo5{
+      border: none;
+      font-size: 3vw;
+      border-radius: 10px;
+      padding: 0.5vw 1vw;
+    }
+  
+    #algo6{
+      border: none;
+      font-size: 3vw;
+      border-radius: 10px;
+      padding: 0.5vw 1vw;
+    }
+  
+    #sortbtn{
+      color: black;
+      border: none;
+      font-size: 2.7vw;
+      border-radius: 10px;
+      padding: .5vw 1vw;
+    }
+
+    #array_container {
+      display: flex;
+      width: 95%;
+      height: 75%;
+      margin-top : 6%;
+      margin-left: 2.5%;
+      /* background-color: red; */
+      align-items: flex-end;
+    }
+
+
+  }
